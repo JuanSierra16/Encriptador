@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="normalice.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,28 +14,29 @@
         <a href="#"><img src="Img/Logo.png" alt="logo alura"></a>
     </header>
 
-    <main>
-        <div class="container">
-            <div class="area-texto">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
-            </div>
+    <div class="container">
+        <main class="principal">
             
-            <div>
-                <img src="Img/Group.png" alt="icono-alerta">
-                <p>Solo letras minúsculas y sin acentos</p>
+            <textarea class="area-texto" name="" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí" autofocus></textarea>
+            
+            <div class="parte-baja">
+                <div class="aviso">
+                    <p><img class="icono-exclamacion" src="Img/Group.png" alt="icono-alerta"> Solo letras minúsculas y sin acentos</p>
+                </div>
+        
+                <div class="botones">
+                    <button class="btn encriptar" type="submit">Encriptar</button>
+                    <button class="btn desencriptar" type="submit">Desencriptar</button>
+                </div>
             </div>
-
-            <div class="botones">
-                <button type="submit">Encriptar</button>
-                <button type="submit">Desencriptar</button>
-            </div>
-        </div>
-    </main>
-    <aside class="rectangulo">
-        <img src="Img/Muñeco.png" alt="muñeco">
-        <h3>Ningún Mensaje fue encontrado</h3>
-        <p>Ingrese el texto que desee encriptar o desencriptar</p>
-    </aside>
+        </main>
+        <aside class="rectangulo">
+            <img class="muneco" src="Img/Muñeco.png" alt="muñeco">
+            <h3>Ningún Mensaje fue encontrado</h3>
+            <p>Ingrese el texto que desee encriptar o desencriptar</p>
+        </aside>
+    </div>
+    
 
     <script src="script.js"></script>
 </body>
