@@ -33,8 +33,21 @@ body {
 
 .area-texto {
     background: transparent;
-    height: 300px;
+    height: 400px;
     width: 100%;
+    padding: 20px;
+    resize: none;
+    border: none;
+    outline: none;
+    font-size: 2em;
+    color: #0A3871;
+}
+
+.resultado-encriptado {
+    background: transparent;
+    height: 550px;
+    width: 300px;
+    margin: 60px 20px;
     resize: none;
     border: none;
     outline: none;
@@ -55,6 +68,7 @@ body {
     width: 300px;
     height: 67px;
     border-radius: 24px;
+    cursor: pointer;
 }
 
 .encriptar {
@@ -69,13 +83,17 @@ body {
     background-color: #D8DFE8;
 }
 
+.copiar {
+    display: none;
+}
+
 .icono-exclamacion {
     vertical-align: top;
 }
 
 .rectangulo {
     width: 400px;
-    height: 944px;
+    height: 800px;
     background: #FFFFFF;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
@@ -83,7 +101,7 @@ body {
 }
 
 .muneco {
-    margin: 247px 41px 0 23px;
+    margin: 180px 41px 0 23px;
 }
 
 aside h3 {
