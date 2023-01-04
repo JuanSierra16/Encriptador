@@ -64,6 +64,16 @@ function copy() {
     mensaje.focus();
 }
 
+function reponerMuneco(){
+    if(texto.value === ''){
+        document.getElementById("contenedor-mensaje").innerHTML = `<img class="muneco" src="Img/Muñeco.png" alt="muñeco">
+                                                                    <h3>Ningún Mensaje fue encontrado</h3>
+                                                                    <p>Ingrese el texto que desee encriptar o desencriptar</p>`
+        botonCopiar.style.display="none";
+    }
+}
+
+texto.addEventListener("keyup", reponerMuneco);
 botonCopiar.addEventListener("click", copy);
 botonEncriptar.onclick = encriptar;
 botonDesencriptar.onclick = desencriptar;
