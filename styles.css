@@ -113,6 +113,16 @@ aside p {
     margin: 16px 41px 0 23px;
 }
 
+footer {
+    background-color: #0A3871;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    text-align: left;
+    width: 100%;
+    height: 20px;
+}
+
 /* Media Queries */
 
 @media screen and (max-width:800px){
