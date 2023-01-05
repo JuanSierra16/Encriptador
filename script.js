@@ -15,7 +15,7 @@ function validar(){
 }
 
 function encriptar(){
-    if(validar()){
+    if(validar() && texto.value!==''){
         botonCopiar.style.display = "inline";
         let arrayEncriptado = [];
         for(let i = 0; i < texto.value.length; i++){
@@ -40,18 +40,18 @@ function encriptar(){
         }
         document.getElementById("contenedor-mensaje").innerHTML = `<textarea class="resultado-encriptado">${arrayEncriptado.join("")}</textarea>`;
     }
-    else {
+    else if(!validar()){
         alert("No debe ingresar letras mayúsculas")
     }
 }
 
 function desencriptar(){
-    if(validar()){
+    if(validar() && texto.value!==''){
         botonCopiar.style.display = "inline";
         let mensajeDesencriptado = texto.value.replace(/enter/g, 'e').replace(/imes/g, 'i').replace(/ai/g, 'a').replace(/ober/g, 'o').replace(/ufat/g, 'u');
         document.getElementById("contenedor-mensaje").innerHTML = `<textarea class="resultado-encriptado" cols="30">${mensajeDesencriptado}</textarea>`;
     }
-    else {
+    else if(!validar()){
         alert("No se permiten mayusculas");
     }
 }
